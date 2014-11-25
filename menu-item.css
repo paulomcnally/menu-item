@@ -21,6 +21,7 @@
   -moz-transition-property: max-height, background-color, opacity;
   transition: 0.2s ease-in-out;
   transition-property: max-height, background-color, opacity;
+  border-radius: 0 !important;
 }
 .menu-item.ng-hide {
   max-height: 0;
@@ -39,6 +40,8 @@
   font-size: 16px;
   text-align: left !important;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 .menu-item.menu-title.active {
   font-weight: bold;
@@ -48,11 +51,18 @@
   color: #AAA;
 }
 
+.menu-item.menu-title a {
+  text-align: left !important;
+  float: left;
+  padding: 10px 25px;
+  width: 100%;
+  border-radius: 0 !important;
+}
+
 md-button {
   border-radius: 0;
 }
 
-.menu-item.menu-title a {
-  text-align: left !important;
-  padding: 16px 25px;
+button.md-button-inner {
+  padding: 0 !important;
 }
